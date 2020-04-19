@@ -36,4 +36,4 @@ Just simply install all mentioned libraries and open the code in your editor. Af
 ENJOY PLAYING!
 
 ### Developers
-HARSH SONI
+[Harsh Soni](https://github.com/xCiPH3R)
