@@ -36,4 +36,4 @@ Just simply install all mentioned libraries and open the code in your editor. Af
 ENJOY PLAYING!
 
 ## Developers
-[Harsh Soni](https://github.com/24Cipher)
+[Harsh Soni](https://www.linkedin.com/in/harsh24soni)
