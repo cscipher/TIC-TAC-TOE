@@ -11,7 +11,7 @@ Install the following libraries
 
 ```
 pip install gtts
-pip install speech_recognition
+pip install SpeechRecognition
 pip install playground
 
 (on linux, use pip3)
