@@ -12,7 +12,7 @@ Install the following libraries
 ```
 pip install gtts
 pip install SpeechRecognition
-pip install playground
+pip install playsound
 
 (on linux, use pip3)
 ```
