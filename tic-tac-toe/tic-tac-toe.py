@@ -5,7 +5,7 @@ from gtts import gTTS
 import speech_recognition as sr
 
 
-board = ['   ','   ','   ','   ','   ','   ','   ','   ','   ','   ' ]
+board = [' ']*10
 
 won = 1
 player = 1
