@@ -37,29 +37,26 @@ def boardStatic():
 
 def wins():
     global game
-    #horizontal
-    if   board[1]==board[2] and board[2]==board[3] and board[1]!='   ':
-        game = won
-    elif board[4]==board[5] and board[5]==board[6] and board[4]!='   ':
-        game = won
-    elif board[7]==board[8] and board[8]==board[9] and board[7]!='   ':
-        game = won
-    #vertical
-    elif board[1]==board[4] and board[4]==board[7] and board[1]!='   ':
-        game = won
-    elif board[2]==board[5] and board[5]==board[8] and board[2]!='   ':
-        game = won
-    elif board[3]==board[6] and board[6]==board[9] and board[3]!='   ':
-        game = won
-    #diagonal
-    elif board[1]==board[5] and board[5]==board[9] and board[5]!='   ':
-        game = won
-    elif board[3]==board[5] and board[5]==board[7] and board[5]!='   ':
-        game = won
-    elif(board[1]!='   ' and board[2]!='   ' and board[3]!='   ' and board[4]!='   ' and board[5]!='   ' and board[6]!='   ' and board[7]!='   ' and board[8]!='   ' and board[9]!='   '):    
-        game = Draw   
+    if game==running:
+        for n in [1,4,7]: #horizontal
+            if board[n]==board[n+1]!=' ' and board[n+1]==board[n+2] :
+                game = won
+
+        for n in [1,2,3]: #vertical
+            if board[n]==board[n+3]!=' ' and board[n+3]==board[n+6] :
+                game = won
+
+        for n in [1]: #leading diagonal
+            if board[n]==board[n+4]!=' ' and board[n+4]==board[n+8] :
+                game = won
+
+        for n in [3]: #other diagonal
+            if board[n]==board[n+2]!=' ' and board[n+2]==board[n+4] :
+                game = won
+
     else:
         game = running
+
 
 def audio():
     
