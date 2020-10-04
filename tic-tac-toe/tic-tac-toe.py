@@ -39,20 +39,23 @@ def wins():
     global game
     if game==running:
         for n in [1,4,7]: #horizontal
-            if board[n]==board[n+1]!=' ' and board[n+1]==board[n+2] :
+            if board[n]==board[n+1]!='   ' and board[n+1]==board[n+2] :
                 game = won
 
         for n in [1,2,3]: #vertical
-            if board[n]==board[n+3]!=' ' and board[n+3]==board[n+6] :
+            if board[n]==board[n+3]!='   ' and board[n+3]==board[n+6] :
                 game = won
 
         for n in [1]: #leading diagonal
-            if board[n]==board[n+4]!=' ' and board[n+4]==board[n+8] :
+            if board[n]==board[n+4]!='   ' and board[n+4]==board[n+8] :
                 game = won
 
         for n in [3]: #other diagonal
-            if board[n]==board[n+2]!=' ' and board[n+2]==board[n+4] :
+            if board[n]==board[n+2]!='   ' and board[n+2]==board[n+4] :
                 game = won
+   
+    elif(board[1]!='   ' and board[2]!='   ' and board[3]!='   ' and board[4]!='   ' and board[5]!='   ' and board[6]!='   ' and board[7]!='   ' and board[8]!='   ' and board[9]!='   '):    
+        game = Draw 
 
     else:
         game = running
